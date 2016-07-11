@@ -1,7 +1,5 @@
-(function() {
-
 // Inspired by http://informationandvisualization.de/blog/box-plot
-d3.box = function() {
+module.exports = function() {
   var width = 1,
       height = 1,
       duration = 0,
@@ -297,5 +295,3 @@ function boxQuartiles(d) {
     d3.quantile(d, .75)
   ];
 }
-
-})();
